@@ -4,6 +4,7 @@
 // implement interpolation here
 int interpolation(uint16_t channel) {
 	// write interpolation code here
+	motor_command=map(sbus_value,0,2047,0,127)
 }
 // creating 11 bit channel
 uint16_t *parse_buffer(uint8_t buff[]) { 
